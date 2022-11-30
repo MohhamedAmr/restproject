@@ -1,6 +1,6 @@
 
 
-        package pojoclasses;
+package pojoclasses;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder
 public class ModelPojo {
     @JsonProperty("userName")
-    private String  userName;
+    private String userName;
     @JsonProperty("confirmPassword")
     private String confirmPassword;
     @JsonProperty("email")
@@ -39,7 +39,7 @@ public class ModelPojo {
     public ModelPojo() {
     }
 
-    public ModelPojo (String userName , String password  ){
+    public ModelPojo(String userName, String password) {
 
         this.userName = userName;
         this.password = password;

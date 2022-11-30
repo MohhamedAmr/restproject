@@ -11,9 +11,9 @@ import java.io.IOException;
     public class GetJson {
 
 
-        public static JSONObject readAsJASONObject(String tcName) throws IOException, ParseException {
+        public static JSONObject readAsJASONObject(String fileName) throws IOException, ParseException {
 
-            String filePath = System.getProperty("user.dir") + "/src/main/java/Backend/DashboardAPIs/Loyality/V1_0/CreateCourierCategoryDashboard/US_34748CreateCourierCategoryDashboard/TestData/" + tcName;
+            String filePath = System.getProperty("user.dir") + "/src/test/resources/" + fileName;
             File srcFile = new File(filePath);
             JSONParser jsonParser = new JSONParser();
             JSONObject jarray = (JSONObject) jsonParser.parse(new FileReader(srcFile));
@@ -21,4 +21,4 @@ import java.io.IOException;
 
         }
     }
-}
+

@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder
 public class ModelPojo {
+
     @JsonProperty("userName")
     private String userName;
     @JsonProperty("confirmPassword")
@@ -58,6 +59,14 @@ public class ModelPojo {
         this.storeLogoName = storeLogoName;
         this.storeLogoUrl = storeLogoUrl;
         this.userType = userType;
+    }
+    @JsonProperty("userName")
+    public String getUserName() {
+        return userName;
+    }
+@JsonProperty("userName")
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     @JsonProperty("confirmPassword")
@@ -169,5 +178,7 @@ public class ModelPojo {
     public void setUserType(Integer userType) {
         this.userType = userType;
     }
+
+
 
 }
